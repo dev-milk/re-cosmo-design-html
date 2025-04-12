@@ -662,9 +662,9 @@ footer {
 #footer {
     margin: 0 auto;
     display: flex;
-    justify-content:space-between;
-    width: 1280px;
-    
+    justify-content: space-around;
+    width: 100%;
+
   }
 
    #footer a {
@@ -678,23 +678,29 @@ footer {
   } 
 
   #footer .item {
-    width: 30%;
+    width: 33%;
   }
+
 
   #footer ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* 中央寄せ */
   }
-  
   #footer ul li {
-    float:left;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin: 0 0.5em;
     font-size: 0.8rem;
     padding: 10px 0;
   }
-
+  
   #footer .list-item {
     line-height: 1;
+  }
+
+  #footer .footer-menu {
+   float:right;
   }
 
   
@@ -715,6 +721,9 @@ footer {
   #footer .item {
     width:100%;
   }
+  #footer .footer-menu {
+   display: none;
+   }
 
 }
 
@@ -769,11 +778,5 @@ Go top
   border-right: 3px solid #14213D;
 }
 
-/*-------------------------------------------
-reCapcha 位置
 
-.grecaptcha-badge{
-  margin-bottom: 60px;
-}
--------------------------------------------*/
 
